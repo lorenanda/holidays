@@ -3,6 +3,7 @@ import random
 import colorama
 
 colors = list(vars(colorama.Fore).values())
+
 while True:
     time.sleep(0.5)
     print(
