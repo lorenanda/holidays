@@ -56,4 +56,4 @@ def send_email():
 
 if __name__ == "__main__":
     pair_people()
-    send_email
+    send_email()
