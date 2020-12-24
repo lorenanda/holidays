@@ -123,5 +123,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-christmas_card.py
-christmas_tree.py
+drafts/
