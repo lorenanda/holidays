@@ -1,4 +1,5 @@
-"""Program to """
+"""This program pairs people randomly for Secret Santa 
+and sends them an email with the person they have to get a preset for."""
 
 import numpy as np
 import datetime
