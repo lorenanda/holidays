@@ -36,13 +36,13 @@ def send_email():
     smtpObj = smtplib.SMTP("smtp.gmail.com", 587)
     smtpObj.ehlo()
     smtpObj.starttls()
-    eml = input("Enter your email: ")
-    pwd = input("Enter your password: ")
-    smtpObj.login(eml, pwd)
+    your_email = input("Enter your email: ")
+    your_password = input("Enter your password: ")
+    smtpObj.login(your_email, your_password)
 
     for i in range(len(friends)):
         smtpObj.sendmail(
-            eml,
+            your_email,
             friends[givers[i]],
             "Subject: Secret Santa Pairs \
         \nHello %s! \
