@@ -30,9 +30,9 @@ def notify_secret_santa():
     )
     secret_santa_df
 
-    my_email = ""
-    my_pw = ""
-    subject = ""
+    my_email = input("Enter your email: ")
+    my_pw = input("Enter you password: ")
+    subject = "Secret Santa Pairs"
 
     smtp_host = "smtp.gmx.com"  # smtp.gmail.com / smtp.yahoo.com / smtp.live.com
 
