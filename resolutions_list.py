@@ -41,7 +41,31 @@ my_entry.pack(pady=20)
 button_frame = Frame(root)
 button_frame.pack(pady=20)
 
-delete_button = Button()
 
+def delete_item():
+    pass
+
+
+def add_item():
+    pass
+
+
+def cross_item():
+    pass
+
+
+def uncross_item():
+    pass
+
+
+delete_button = Button(button_frame, text="Delete", commad=delete_item)
+add_button = Button(button_frame, text="Add", commad=add_item)
+cross_button = Button(button_frame, text="Cross off", commad=cross_item)
+uncross_button = Button(button_frame, text="Uncross", commad=uncross_item)
+
+delete_button.grid(row=0, column=0)
+add_button.grid(row=0, column=1, padx=20)
+cross_button.grid(row=0, column=2)
+uncross_button.grid(row=0, column=3, padx=20)
 
 root.mainloop()
