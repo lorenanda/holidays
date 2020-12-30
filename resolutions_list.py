@@ -6,7 +6,6 @@ root = Tk()
 root.title("New Year Resolutions")
 root.geometry("500x500")
 
-
 my_frame = Frame(root)
 my_frame.pack(pady=10)
 
@@ -43,11 +42,12 @@ button_frame.pack(pady=20)
 
 
 def delete_item():
-    pass
+    my_list.delete(ANCHOR)
 
 
 def add_item():
-    pass
+    my_list.insert(END, my_entry.get())
+    my_entry.delete(0, END)
 
 
 def cross_item():
@@ -58,10 +58,10 @@ def uncross_item():
     pass
 
 
-delete_button = Button(button_frame, text="Delete", commad=delete_item)
-add_button = Button(button_frame, text="Add", commad=add_item)
-cross_button = Button(button_frame, text="Cross off", commad=cross_item)
-uncross_button = Button(button_frame, text="Uncross", commad=uncross_item)
+delete_button = Button(button_frame, text="Delete", command=delete_item)
+add_button = Button(button_frame, text="Add", command=add_item)
+cross_button = Button(button_frame, text="Cross off", command=cross_item)
+uncross_button = Button(button_frame, text="Uncross", command=uncross_item)
 
 delete_button.grid(row=0, column=0)
 add_button.grid(row=0, column=1, padx=20)
