@@ -51,7 +51,8 @@ def add_item():
 
 
 def cross_item():
-    pass
+    my_list.itemconfig(my_list.curselection(), fg="#dedede")
+    my_list.selection_clear(0, END)
 
 
 def uncross_item():
