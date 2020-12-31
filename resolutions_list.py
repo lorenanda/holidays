@@ -56,7 +56,8 @@ def cross_item():
 
 
 def uncross_item():
-    pass
+    my_list.itemconfig(my_list.curselection(), fg="#000")
+    my_list.selection_clear(0, END)
 
 
 delete_button = Button(button_frame, text="Delete", command=delete_item)
